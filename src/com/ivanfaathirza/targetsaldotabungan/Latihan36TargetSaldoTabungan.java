@@ -2,6 +2,16 @@ package com.ivanfaathirza.targetsaldotabungan;
 
 import java.util.Scanner;
 
+/**
+ *
+ * @author Ivan
+ * NAMA         : Ivan Faathirza
+ * KELAS        : IF1
+ * NIM          : 10119003
+ * Deskripsi Program : program ini untuk menghitung target saldo tabungan
+ * dan berbasis objek dengan instansiasi objek saldo
+ */
+
 public class Latihan36TargetSaldoTabungan {
     static Scanner scan = new Scanner(System.in);
     private static Double saldoAwal, bungaAwal, targetSaldo;
@@ -17,9 +27,9 @@ public class Latihan36TargetSaldoTabungan {
     }
 
     public static void main(String[] args) {
-        Saldo saldoTarget = new Saldo();
+        Saldo saldo = new Saldo();
         masukkanSaldo();
-        saldoTarget.hitungSaldo(bungaAwal, saldoAwal, targetSaldo);
+        saldo.hitungSaldo(bungaAwal, saldoAwal, targetSaldo);
         System.out.println("Developed by : Ivan Faathirza");
     }
 }
